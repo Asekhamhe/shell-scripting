@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Author: Lawrence Onaulogho
+#Description: Kaizen is a Japenese word and philosophy which means continuous development
+#Date: 08/10/2020
+#Date Modified: 08/10/2020
+
+echo
+echo Preparing for a career in devops
+echo skills required
+echo
+echo AWS Certification
+echo Azure Certification
+echo GCP Certification
+echo 
+echo Kubernetes
+echo Docker
+echo Linux
+echo Bash Scripting
+echo Golang or Python
+echo Terrafform
+echo Jenkins
+echo CI/CD
+echo Loading...
+echo

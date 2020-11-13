@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Desc: If then conditional statement
+# Date: 20/20/2020
+# Date Modified: 20/20/2020
+
+count=50
+if [ $count -eq 100 ] 
+then
+	echo Count is $count
+else
+	echo Count is not $count
+fi

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Desc: This script will output with different actions
+
+for i in eat run jump play
+do
+echo See Lawrence $i
+done

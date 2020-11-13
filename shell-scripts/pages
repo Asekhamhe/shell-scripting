@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Desc: A bash script for determining how many pages are in a folder of OpenOffice docs
+# Date: 20/20/2020
+# Date Modified: 20/20/2020
+
+echo "$(exiftool *.odt | grep Page-count | cut -d ":" -f2 | tr '\n' '+')""0" | bc

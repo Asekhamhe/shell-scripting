@@ -1,0 +1,16 @@
+#!/bin/bash
+# Author: Lawrence Onaulogho
+# Description: IO for users
+# Date: 20/20/2020
+# Date Modified: 20/20/2020
+
+#
+hostname=$(hostname)
+echo
+echo Hello, my server name is $hostname
+echo
+echo What is your name
+read name
+echo
+echo My name is $name.
+echo

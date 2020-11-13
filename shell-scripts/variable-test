@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Description: Variable description
+# Date: 20/20/2020
+# Date Modified: 20/20/2020
+
+p=pwd
+l=ls
+wi=whoami
+c='cal 2018'
+
+echo Run variables tasks
+echo
+$p
+echo
+$l
+echo
+$wi
+echo
+$c
+echo
+

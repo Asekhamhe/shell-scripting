@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Description: This script will run basic admin commands
+# Date: 08/20/2020
+# Date Modified: 08/20/2020
+echo
+echo This script will run basic administrative commands
+echo
+top | head -10
+echo
+df -h
+echo
+free -m
+echo
+uptime
+echo
+iostat
+echo
+echo Task ran successfully
+echo

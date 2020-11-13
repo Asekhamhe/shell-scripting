@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Author: Lawrence Onaulogho
+# Desc: first bash script
+# Date: 20/20/2020
+
+echo "Hello World"
+echo
+echo $(which neqn)
+echo
+cat $(which neqn)
+echo
