@@ -1,0 +1,75 @@
+# CUT - Remove sections from each line of files
+# show me columns 2,3 with a space as a separator
+echo "################ cut command ################"
+cut -d " " -f2,3 ./basics/new-test.txt
+
+# egrep - Print lines matching a pattern - Extended alias for grep -E
+# display lines that have either "lorem or dolor"
+echo ""
+echo "############# egrep command #################"
+egrep '(lorem|dolor)' ./basics/new-test.txt
+
+# fgrep - Print lines matching a pattern - FIXED pattern matching (alias for 'grep -F')
+
+echo ""
+echo "############# fgrep command #################"
+fgrep '(lorem|dolor)' ./basics/new-test.txt
+
+
+# fmt - Simple optimal text formatter
+# output the lines of a file to 20 character width
+echo ""
+echo "############# fmt command #################"
+cat ./basics/new-test.txt | fmt -w 20
+
+# grep - Looks for text inside files. You can use grep to search for lines of text that match one or many regular expressions, and outputs only the matching lines
+echo ""
+echo "############# grep command #################"
+grep admin /etc/passwd
+
+# nl - Number lines of files
+
+echo ""
+echo "############# nl command #################"
+nl -s". " ./basics/new-test.txt
+
+# sed - Stream editor for filtering and transforming text
+echo ""
+echo "############# sed command #################"
+# replace all spaces with hyphens
+sed 's/ /-/g' ./basics/new-test.txt
+# replace all digits with "d"
+sed 's/[0-9]/d/g' ./basics/new-test.txt
+
+# sort - Sort lines of text files
+echo ""
+echo "############# sort command #################"
+sort ./basics/new-test.txt
+
+# randomize a sorted files
+sort ./basics/new-test.txt | sort -R
+
+# tr - Translate or delete characters
+echo ""
+echo "############# tr command #################"
+# take all lower case letters and make them upper case
+cat ./basics/new-test.txt | tr 'a-z' 'A-Z'
+# take all spaces and make them newline
+cat ./basics/new-test.txt | tr ' ' '\n'
+
+# uniq - Report or omit repeated lines
+
+echo ""
+echo "############# uniq command #################"
+# show only unique lines of files (first you need to sort it, otherwise it won't see the overlap)
+sort ./basics/new-test.txt | uniq
+# show the unique items for each line, and tell me how many instances it found
+sort ./basics/new-test.txt | uniq -c
+
+# wc - Tells you how many lines, word and characters there are in a file
+echo ""
+echo "############# wc command #################"
+echo "      lines  words   characters"
+wc ./basics/new-test.txt
+
+

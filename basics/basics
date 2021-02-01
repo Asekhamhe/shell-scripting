@@ -1,0 +1,112 @@
+#! /bin/bash
+NAME="Bob"
+echo "My name is $Name"
+echo "My name is ${Name}"
+
+# User input
+read -p "Enter your name: " NAME
+echo "Hello $NAME, nice to meet you!"
+
+# IF STATEMENT
+if [ "$NAME" == "Lawrence" ]
+then
+    echo "Your name is $NAME"
+fi
+
+# SIMPLE IF-ELSE STATEMENT
+if [ "$NAME" == "Lawrence" ] 
+then
+    echo "Your name is $NAME"
+else
+    echo "Your name is NOT Lawrence"
+fi
+
+# ELSE-IF (elif)
+if [ "$NAME" == "Lawrence" ]
+then
+    echo "Your name is $NAME"
+elif [ "$NAME" == "Beast" ]
+then
+    echo "Your name is $NAME"
+else
+    echo "Your name is NOT Lawrence or Beast"
+fi
+
+# COMPARISON
+NUM1=31
+NUM2=5
+if [ "$NUM1" -gt "$NUM2" ]
+then
+    echo "$NUM1 is greater than $NUM2"
+else
+    echo "$NUM1 is less than $NUM2"
+fi
+
+# FILE CONDITIONS
+FILE=test.txt
+if [ -e "$FILE" ]
+then
+    echo "$FILE exists"
+else
+    echo "$FILE does NOT exist"
+fi
+
+# CASE STATEMENT
+read -p "Are you 21 or over? Y/N " ANSWER
+case "$ANSWER" in
+    [yY] | [yY][eE][sS])
+        echo "You can have a beer :)"
+        ;;
+    [nN] | [nN][oO])
+        echo "Sorry, no drinking"
+        ;;
+    *)
+        echo "Please enter y/yes or n/no"
+        ;;
+esac
+
+# SIMPLE FOR LOOP
+NAMES="Lawrence Beast Florence Canty"
+for NAME in $NAMES
+    do
+        echo "Hello $NAME"
+done
+
+# FOR LOOP TO RENAME FILES
+# FILES=$(ls *.txt)
+# NEW="new"
+# for FILE in $FILES
+#     do
+#         echo "Renaming $FILE to new-$FILE"
+#         mv $FILE $NEW-$FILE
+# done
+
+# WHILE LOOP - READ THROUGH A FILE LINE BY LINE
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "./new-test.txt"
+
+# FUNCTION
+function sayHello(){
+    echo "Hello world from function block"
+}
+sayHello
+
+# FUNCTION WITH PARAMS
+function greet() {
+    echo "Hello, I am $1 and I am $2"
+}
+
+greet "Lawrence" "24"
+
+
+
+
+
+
+
+
+
